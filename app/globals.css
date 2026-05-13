@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --base-primary: #040926;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  color: #0E1020;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
